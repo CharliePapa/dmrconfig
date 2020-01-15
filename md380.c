@@ -696,7 +696,7 @@ static void print_chanlist(FILE *out, uint16_t *unsorted, int nchan)
 
     // Sort the list before printing.
     memcpy(data, unsorted, nchan * sizeof(uint16_t));
-    qsort(data, nchan, sizeof(uint16_t), compare_index);
+    //qsort(data, nchan, sizeof(uint16_t), compare_index);
     for (n=0; n<nchan; n++) {
         int cnum = data[n];
 
